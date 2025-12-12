@@ -1,0 +1,30 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+
+-- Harpoon
+vim.keymap.set("n", "<leader>h", ":lua require('harpoon.ui').toggle_quick_menu()<CR>", { desc = "harpoonMenu" })
+
+vim.keymap.set("n", "<leader>a", ":lua require('harpoon.mark').add_file()<CR>", { desc = "harpoon Add file" })
+
+vim.keymap.set("n", "<leader>1", ":lua require('harpoon.ui').nav_file(1)<CR>", { desc = "harpoon navigate to file" })
+vim.keymap.set("n", "<leader>2", ":lua require('harpoon.ui').nav_file(2)<CR>", { desc = "harpoon navigate to file" })
+vim.keymap.set("n", "<leader>3", ":lua require('harpoon.ui').nav_file(3)<CR>", { desc = "harpoon navigate to file" })
+vim.keymap.set("n", "<leader>4", ":lua require('harpoon.ui').nav_file(4)<CR>", { desc = "harpoon navigate to file" })
+vim.keymap.set("n", "<leader>5", ":lua require('harpoon.ui').nav_file(5)<CR>", { desc = "harpoon navigate to file" })
+vim.keymap.set("n", "<leader>6", ":lua require('harpoon.ui').nav_file(6)<CR>", { desc = "harpoon navigate to file" })
+vim.keymap.set("n", "<leader>7", ":lua require('harpoon.ui').nav_file(7)<CR>", { desc = "harpoon navigate to file" })
+vim.keymap.set("n", "<leader>8", ":lua require('harpoon.ui').nav_file(8)<CR>", { desc = "harpoon navigate to file" })
+vim.keymap.set("n", "<leader>9", ":lua require('harpoon.ui').nav_file(9)<CR>", { desc = "harpoon navigate to file" })
+
+
+
+-- Telescope
+vim.keymap.set('n', '<leader>ff', ":Telescope find_files <CR>", { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>fg', ":Telescope live_grep <CR>", { desc = 'Telescope live grep' })
+vim.keymap.set('n', '<leader>fb', ":Telescope buffers <CR>", { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>fh', ":telescope help_tags <cr>", { desc = 'telescope help tags' })
+
+-- nvim tree
+
+vim.keymap.set('n', '<leader>e', ":NvimTreeToggle <cr>", { desc = 'telescope help tags' })
