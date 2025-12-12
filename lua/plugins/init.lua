@@ -20,4 +20,5 @@ return {
 	    end
   	},
 	"xiyaowong/transparent.nvim",
+	{'akinsho/toggleterm.nvim', version = "*", config = true},
 }

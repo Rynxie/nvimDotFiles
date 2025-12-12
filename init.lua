@@ -1,5 +1,9 @@
-require("config.keymap")
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 require("config.lazy")
+require("config.keymap")
+
 
 
 vim.g.loaded_netrw = 1

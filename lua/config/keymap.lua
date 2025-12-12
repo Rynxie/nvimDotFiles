@@ -1,7 +1,3 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
-
 -- Harpoon
 vim.keymap.set("n", "<leader>h", ":lua require('harpoon.ui').toggle_quick_menu()<CR>", { desc = "harpoonMenu" })
 
@@ -18,7 +14,6 @@ vim.keymap.set("n", "<leader>8", ":lua require('harpoon.ui').nav_file(8)<CR>", {
 vim.keymap.set("n", "<leader>9", ":lua require('harpoon.ui').nav_file(9)<CR>", { desc = "harpoon navigate to file" })
 
 
-
 -- Telescope
 vim.keymap.set('n', '<leader>ff', ":Telescope find_files <CR>", { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', ":Telescope live_grep <CR>", { desc = 'Telescope live grep' })
@@ -28,3 +23,9 @@ vim.keymap.set('n', '<leader>fh', ":telescope help_tags <cr>", { desc = 'telesco
 -- nvim tree
 
 vim.keymap.set('n', '<leader>e', ":NvimTreeToggle <cr>", { desc = 'telescope help tags' })
+
+
+-- Terminal mode exit
+vim.cmd [[ tnoremap <Esc> <C-\><C-n> ]]
+
+vim.keymap.set("n", "<leader>t", [[:ToggleTerm size=15 direction=horizontal name=term<cr>]], { desc = "Toggle terminal 1" })
