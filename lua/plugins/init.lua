@@ -7,6 +7,7 @@ return {
 	"nvim-tree/nvim-tree.lua",
 	"nvim-tree/nvim-web-devicons",
 	"mason-org/mason.nvim",
+	"neovim/nvim-lspconfig",
 	'numToStr/Comment.nvim',
 	{'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
 	{ 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
@@ -21,4 +22,14 @@ return {
   	},
 	"xiyaowong/transparent.nvim",
 	{'akinsho/toggleterm.nvim', version = "*", config = true},
+	{
+	  'nvimdev/dashboard-nvim',
+	  event = 'VimEnter',
+	  config = function()
+	    require('dashboard').setup {
+	      -- config
+	    }
+	  end,
+	  dependencies = { {'nvim-tree/nvim-web-devicons'}}
+	},
 }

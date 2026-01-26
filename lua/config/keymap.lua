@@ -29,3 +29,7 @@ vim.keymap.set('n', '<leader>e', ":NvimTreeToggle <cr>", { desc = 'telescope hel
 vim.cmd [[ tnoremap <Esc> <C-\><C-n> ]]
 
 vim.keymap.set("n", "<leader>t", [[:ToggleTerm size=15 direction=horizontal name=term<cr>]], { desc = "Toggle terminal 1" })
+
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
+
