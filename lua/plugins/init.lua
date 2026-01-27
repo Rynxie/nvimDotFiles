@@ -6,8 +6,6 @@ return {
 	{'nvim-telescope/telescope.nvim', tag = 'v0.2.0', dependencies = { 'nvim-lua/plenary.nvim' }},
 	"nvim-tree/nvim-tree.lua",
 	"nvim-tree/nvim-web-devicons",
-	"mason-org/mason.nvim",
-	"neovim/nvim-lspconfig",
 	'numToStr/Comment.nvim',
 	{'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' }},
 	{ 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
@@ -32,4 +30,12 @@ return {
 	  end,
 	  dependencies = { {'nvim-tree/nvim-web-devicons'}}
 	},
+	{
+    "mason-org/mason-lspconfig.nvim",
+    opts = {},
+    dependencies = {
+        { "mason-org/mason.nvim", opts = {} },
+        "neovim/nvim-lspconfig",
+    },
+}
 }

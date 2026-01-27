@@ -18,6 +18,6 @@ require('lualine').setup{
 	}
 
 }
-require("mason").setup()
+require("mason-lspconfig").setup()
 require("nvim-tree").setup()
 require('Comment').setup()
