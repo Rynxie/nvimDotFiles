@@ -2,6 +2,7 @@ return {
 
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{ "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+	{ "folke/tokyonight.nvim", lazy = false, priority = 1000},
 	"nvim-lua/plenary.nvim",
 	"ThePrimeagen/harpoon",
 	{'nvim-telescope/telescope.nvim', tag = 'v0.2.0', dependencies = { 'nvim-lua/plenary.nvim' }},
