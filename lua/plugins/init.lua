@@ -21,14 +21,10 @@ return {
 	"xiyaowong/transparent.nvim",
 	{'akinsho/toggleterm.nvim', version = "*", config = true},
 	{
-	  'nvimdev/dashboard-nvim',
-	  event = 'VimEnter',
-	  config = function()
-	    require('dashboard').setup {
-	      -- config
-	    }
-	  end,
-	  dependencies = { {'nvim-tree/nvim-web-devicons'}}
+		'goolord/alpha-nvim',
+		config = function ()
+			require'alpha'.setup(require'alpha.themes.dashboard'.config)
+		end
 	},
 	{
 		"mason-org/mason-lspconfig.nvim",
