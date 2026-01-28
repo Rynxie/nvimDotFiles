@@ -33,3 +33,4 @@ vim.keymap.set("n", "<leader>t", [[:ToggleTerm size=15 direction=horizontal name
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
 
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "go to deff" })
