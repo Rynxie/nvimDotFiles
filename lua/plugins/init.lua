@@ -68,4 +68,5 @@ return {
 			})
 		end,
 	},
+	{"https://github.com/pimalaya/himalaya-vim"},
 }
