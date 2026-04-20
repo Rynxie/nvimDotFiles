@@ -19,7 +19,7 @@ vim.keymap.set('n', '<leader>ff', ":Telescope find_files <CR>", { desc = 'Telesc
 vim.keymap.set('n', '<leader>fg', ":Telescope live_grep <CR>", { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>fb', ":Telescope buffers <CR>", { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', ":Telescope help_tags <cr>", { desc = 'telescope help tags' })
-vim.keymap.set('n', '<leader>fz', ":Telescope current_buffer_fuzzy_find <cr>", { desc = 'Telescope current buffer fuzzy finder' })
+vim.keymap.set('n', '<leader>fz', ":Telescope current_buffer_fuzzy_find previewer=false layout_config={height=20,width=0.4}<CR>", { desc = 'Fuzzy search small' })
 
 -- nvim tree
 
